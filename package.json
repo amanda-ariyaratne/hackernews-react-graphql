@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm -rf dist && rm -rf ./.next",
     "build": "npm run clean && next build && tsc --project tsconfig-server.json",
-    "build:docker": "docker build --tag 'clintonwoo/hackernews-react-graphql:latest' --rm . && docker run --rm -p 80:3000 --name hackernews-react-graphql clintonwoo/hackernews-react-graphql",
+    "build:docker": "docker build --tag ' amanda-ariyaratne/hackernews-react-graphql:latest' --rm . && docker run --rm -p 80:3000 --name hackernews-react-graphql  amanda-ariyaratne/hackernews-react-graphql",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "build:static-website": "rm -rf build/static && cross-env NODE_ENV=production next build && next export -o build/static",
     "debug": "cross-env DEBUG=app:* npm start",
